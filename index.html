@@ -19,13 +19,6 @@
 </head>
 <body>
 
-<!-- ===== LOADER ===== -->
-<div id="loader">
-  <div class="loader-logo">Ctrl + Allysa</div>
-  <div class="loader-bar-wrap"><div class="loader-bar"></div></div>
-  <div class="loader-text">LOADING PORTFOLIO...</div>
-</div>
-
 <!-- ===== PARTICLES ===== -->
 <canvas id="particles-canvas"></canvas>
 
@@ -1039,17 +1032,10 @@
 </button>
 
 <script>
-/* ============================================================
-   LOADER
-   ============================================================ */
-window.addEventListener('load', () => {
-  setTimeout(() => {
-    document.getElementById('loader').classList.add('hidden');
-    document.body.style.overflow = '';
-    initAnimations();
-  }, 2400);
+
+  window.addEventListener('load', () => {
+  initAnimations();
 });
-document.body.style.overflow = 'hidden';
 
 /* ============================================================
    PARTICLES
