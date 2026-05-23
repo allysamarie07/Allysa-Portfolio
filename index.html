@@ -1,0 +1,1366 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>My Portfolio</title>
+<meta name="description" content="Professional portfolio of a BS Computer Science student seeking OJT opportunities. Showcasing projects, skills, and achievements." />
+
+<link rel="stylesheet" href="design.css">
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+<!-- Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+</head>
+<body>
+
+<!-- ===== LOADER ===== -->
+<div id="loader">
+  <div class="loader-logo">Ctrl + Allysa</div>
+  <div class="loader-bar-wrap"><div class="loader-bar"></div></div>
+  <div class="loader-text">LOADING PORTFOLIO...</div>
+</div>
+
+<!-- ===== PARTICLES ===== -->
+<canvas id="particles-canvas"></canvas>
+
+<!-- ===== NAVBAR ===== -->
+<nav id="navbar">
+  <a href="#hero" class="nav-logo">Ctrl + Allysa</a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#certificates">Certificates</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="nav-right">
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+      <i class="fa-solid fa-moon" id="themeIcon"></i>
+    </button>
+    <div class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#about" class="mobile-link">About</a>
+  <a href="#skills" class="mobile-link">Skills</a>
+  <a href="#projects" class="mobile-link">Projects</a>
+  <a href="#experience" class="mobile-link">Experience</a>
+  <a href="#certificates" class="mobile-link">Certificates</a>
+  <a href="#contact" class="mobile-link">Contact</a>
+</div>
+
+<!-- ===== HERO ===== -->
+<section id="hero">
+  <div class="hero-bg-orb hero-bg-orb-1"></div>
+  <div class="hero-bg-orb hero-bg-orb-2"></div>
+  <div class="container">
+    <div class="hero-inner">
+      <div class="hero-content">
+        <div class="hero-badge reveal">📍 Tagbilaran City, Philippines</div>
+        <h1 class="hero-name reveal">
+          <span class="gradient-text">Allysa</span><br>Datahan<span class="gradient-text">.</span>
+        </h1>
+        <p class="hero-role reveal">
+          <span id="typed-text"></span><span class="cursor"></span>
+        </p>
+        <p class="hero-desc reveal">
+          A BS Computer Engineering student at the University of Bohol who enjoys creating digital solutions,
+           exploring AI systems, and developing useful and user-friendly applications. Eager to learn new skills, 
+           contribute to projects, and grow through real-world experience.
+        </p>
+        <div class="hero-btns reveal">
+          <a href="#projects" class="btn btn-primary"><i class="fa-solid fa-rocket"></i> View Projects</a>
+          <a href="#" class="btn btn-outline" id="downloadResume"><i class="fa-solid fa-download"></i> Download Resume</a>
+          <a href="#contact" class="btn btn-ghost"><i class="fa-solid fa-envelope"></i> Contact Me</a>
+        </div>
+        
+      </div>
+        <div class="hero-avatar-wrap reveal-right">
+          <div class="hero-avatar-ring">
+            <div class="hero-avatar-ring-inner">
+              <div class="hero-avatar-placeholder">
+                <i class="fa-solid fa-user"></i>
+                <img src="images/3.jpg" alt="Profile Photo">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== COUNTERS ===== -->
+<div class="counter-section">
+  <div class="container">
+    <div class="counters-grid">
+      <div class="counter-item">
+        <div class="counter-num" data-target="20+">0</div>
+        <div class="counter-label">Projects Completed</div>
+      </div>
+      <div class="counter-item">
+        <div class="counter-num" data-target="30">0</div>
+        <div class="counter-label">Certificates</div>
+      </div>
+      <div class="counter-item">
+        <div class="counter-num" data-target="5">0</div>
+        <div class="counter-label">Leadership Roles</div>
+      </div>
+      <div class="counter-item">
+        <div class="counter-num" data-target="3">0</div>
+        <div class="counter-label">Years of Coding</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== ABOUT ===== -->
+<section id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-img-wrap reveal-left">
+<div class="about-img-placeholder">
+  <img src="images/2.jpg" alt="About Photo">
+</div>
+        <div class="about-img-deco"></div>
+      </div>
+      <div class="about-content">
+        <div class="section-header reveal">
+          <span class="section-label">// About Me</span>
+          <h2 class="section-title">The Person <span class="gradient-text">Behind the Code</span></h2>
+        </div>
+        <p class="about-text reveal">
+           Hi! I'm <strong>Allysa Marie A. Datahan</strong>, a 3rd-year BS Computer Engineering student with a strong interest in technology and innovation. 
+           I enjoy combining creativity and problem-solving through building web applications, exploring machine learning, and designing user-friendly interfaces.
+        </p>
+        <p class="about-text reveal">
+          My interest in technology started when I first learned how to use a computer. Since then, I have continued learning new skills, 
+          working on projects, joining organizations, and earning certifications to improve my knowledge and experience.
+        </p>
+        <p class="about-text reveal">
+          I am currently looking for an OJT opportunity where I can apply what I’ve learned in school, 
+          contribute to meaningful projects, and continue growing as a future IT professional.
+        </p>
+        
+        <div class="edu-timeline reveal">
+          <div class="edu-item">
+            <div class="edu-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+            <div>
+              <div class="edu-title">BS Computer Engineering</div>
+              <div class="edu-school">University of Bohol, Tagbilaran City</div>
+              <div class="edu-year">2023 – Present</div>
+            </div>
+          </div>
+          <div class="edu-item">
+            <div class="edu-icon"><i class="fa-solid fa-school"></i></div>
+            <div>
+              <div class="edu-title">General Academic Strand</div>
+              <div class="edu-school">Mayuga National High School</div>
+              <div class="edu-year">2021 – 2023</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SKILLS ===== -->
+<section id="skills">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-label">// Technical Skills</span>
+      <h2 class="section-title">My <span class="gradient-text">Toolkit</span></h2>
+      <p class="section-subtitle">Technologies and tools I work with to bring ideas to life.</p>
+    </div>
+    <div class="skills-grid">
+      <div class="card skill-card reveal" style="transition-delay:0.05s">
+        <div class="skill-header">
+          <div class="skill-icon" style="color:#e44d26"><i class="fa-brands fa-html5"></i></div>
+          <div><div class="skill-name">HTML5</div><div class="skill-category">MARKUP</div></div>
+        </div>
+        <div class="skill-bar-wrap"><div class="skill-bar" data-width="90"></div></div>
+        <div class="skill-footer"><div class="skill-level">Advanced</div><div class="skill-pct">90%</div></div>
+      </div>
+      <div class="card skill-card reveal" style="transition-delay:0.1s">
+        <div class="skill-header">
+          <div class="skill-icon" style="color:#264de4"><i class="fa-brands fa-css3-alt"></i></div>
+          <div><div class="skill-name">CSS3</div><div class="skill-category">STYLING</div></div>
+        </div>
+        <div class="skill-bar-wrap"><div class="skill-bar" data-width="85"></div></div>
+        <div class="skill-footer"><div class="skill-level">Advanced</div><div class="skill-pct">85%</div></div>
+      </div>
+      <div class="card skill-card reveal" style="transition-delay:0.15s">
+        <div class="skill-header">
+          <div class="skill-icon" style="color:#f7df1e"><i class="fa-brands fa-js"></i></div>
+          <div><div class="skill-name">JavaScript</div><div class="skill-category">SCRIPTING</div></div>
+        </div>
+        <div class="skill-bar-wrap"><div class="skill-bar" data-width="75"></div></div>
+        <div class="skill-footer"><div class="skill-level">Intermediate</div><div class="skill-pct">78%</div></div>
+      </div>
+      <div class="card skill-card reveal" style="transition-delay:0.2s">
+        <div class="skill-header">
+          <div class="skill-icon" style="color:#3776ab"><i class="fa-brands fa-python"></i></div>
+          <div><div class="skill-name">Python</div><div class="skill-category">BACKEND / AI</div></div>
+        </div>
+        <div class="skill-bar-wrap"><div class="skill-bar" data-width="75"></div></div>
+        <div class="skill-footer"><div class="skill-level">Advanced</div><div class="skill-pct">82%</div></div>
+      </div>
+      <div class="card skill-card reveal" style="transition-delay:0.3s">
+        <div class="skill-header">
+          <div class="skill-icon" style="color:#f89820"><i class="fa-brands fa-java"></i></div>
+          <div><div class="skill-name">Java</div><div class="skill-category">OOP</div></div>
+        </div>
+        <div class="skill-bar-wrap"><div class="skill-bar" data-width="72"></div></div>
+        <div class="skill-footer"><div class="skill-level">Intermediate</div><div class="skill-pct">72%</div></div>
+      </div>
+      <div class="card skill-card reveal" style="transition-delay:0.35s">
+        <div class="skill-header">
+          <div class="skill-icon" style="color:#00979d"><i class="fa-solid fa-microchip"></i></div>
+          <div><div class="skill-name">Arduino</div><div class="skill-category">IOT / HARDWARE</div></div>
+        </div>
+        <div class="skill-bar-wrap"><div class="skill-bar" data-width="75"></div></div>
+        <div class="skill-footer"><div class="skill-level">Intermediate</div><div class="skill-pct">75%</div></div>
+      </div>
+      <div class="card skill-card reveal" style="transition-delay:0.4s">
+        <div class="skill-header">
+          <div class="skill-icon" style="color:#336791"><i class="fa-solid fa-database"></i></div>
+          <div><div class="skill-name">Database Mgmt</div><div class="skill-category">SQL / NOSQL</div></div>
+        </div>
+        <div class="skill-bar-wrap"><div class="skill-bar" data-width="80"></div></div>
+        <div class="skill-footer"><div class="skill-level">Intermediate</div><div class="skill-pct">80%</div></div>
+      </div>
+      <div class="card skill-card reveal" style="transition-delay:0.45s">
+        <div class="skill-header">
+          <div class="skill-icon" style="color:#9f7aea"><i class="fa-solid fa-pen-ruler"></i></div>
+          <div><div class="skill-name">UI/UX Design</div><div class="skill-category">DESIGN</div></div>
+        </div>
+        <div class="skill-bar-wrap"><div class="skill-bar" data-width="90"></div></div>
+        <div class="skill-footer"><div class="skill-level">Advanced</div><div class="skill-pct">76%</div></div>
+      </div>
+      <div class="card skill-card reveal" style="transition-delay:0.5s">
+        <div class="skill-header">
+          <div class="skill-icon" style="color:#68d391"><i class="fa-solid fa-lightbulb"></i></div>
+          <div><div class="skill-name">Problem Solving</div><div class="skill-category">ANALYTICAL</div></div>
+        </div>
+        <div class="skill-bar-wrap"><div class="skill-bar" data-width="88"></div></div>
+        <div class="skill-footer"><div class="skill-level">Advanced</div><div class="skill-pct">88%</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PROJECTS ===== -->
+<section id="projects">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-label">// Projects</span>
+      <h2 class="section-title">What I've <span class="gradient-text">Built</span></h2>
+      <p class="section-subtitle">A showcase of projects that I have done for a span of 3 years at UB. </p>
+    </div>
+    <div class="filter-bar reveal">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="web">Web Development</button>
+      <button class="filter-btn" data-filter="ai">AI & PWA</button>
+      <button class="filter-btn" data-filter="hardware">Hardware</button>
+      <button class="filter-btn" data-filter="research">Research</button>
+    </div>
+    <div class="projects-grid">
+
+      <div class="card project-card reveal"
+        data-category="web"
+        data-proj-title="TaskTamer"
+        data-proj-img="images/TaskTamer.png"
+        data-proj-subject="Web Development"
+        data-proj-year="1st Year — AY 2023–2024"
+        data-proj-language="HTML, CSS, JavaScript, Servlets, JSP, Java, PHP, MySQL"
+        data-proj-desc="Is a web-based Homework Management System designed to help students efficiently manage assignments and notes through a secure, personalized account. It offers features such as task organization, note-taking with due dates and file attachments, and the ability to delete completed tasks for a clean workflow."
+        data-proj-source="https://github.com/allysamarie07/TaskTamer"
+        style="transition-delay:0.05s">
+        <div class="project-thumb" style="background:linear-gradient(135deg,#1a1a2e,#16213e)">
+          <div class="project-thumb-inner">
+            <div class="project-thumb-icon" style="color:#63b3ed">📝</div>
+            <div class="project-thumb-label">WEB DEVELOPMENT</div>
+          </div>
+          <div class="project-thumb-overlay"></div>
+          <div class="project-hover-overlay"><i class="fa-solid fa-expand"></i> View</div>
+        </div>
+        <div class="project-body">
+          <div class="project-category"></div>
+          <div class="project-title">TaskTamer</div>
+          <p class="project-desc">A web-based Homework Management System that manage assignments, notes and offers features such as task organization, note-taking with due dates and file attachments, </p>
+          <div class="project-tech">
+            <span class="tech-chip">CPEP121A - Object Oriented Programming</span>
+            <span class="tech-chip">CS123T - Web Systems and Technologies</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card project-card reveal"
+        data-category="hardware"
+        data-proj-title="Sumobot & Hockeybot"
+        data-proj-img="images/dragon.png"
+        data-proj-subject="Arduino"
+        data-proj-year="2nd Year — AY 2024–2025"
+        data-proj-language="Arduino, Bluetooth Module, MIT App Inventor"
+        data-proj-desc="Developed a sumobot using Arduino and an illustration board as chasis. The project includes two buttons: first button is used to start the sumobot, while the second button initializes the hockeybot mode. The hockeybot can be controlled wirelessly through a mobile application created using MIT App Inventor."
+        data-proj-source="https://www.youtube.com/watch?v=-R-sLFjTHeg"
+        data-proj-btn="documentation"
+        style="transition-delay:0.15s">
+        <div class="project-thumb" style="background:linear-gradient(135deg,#6d1a1a,#3d0f0f)">          <div class="project-thumb-inner">
+            <div class="project-thumb-icon" style="color:#f5f5f569">🚗</div>
+            <div class="project-thumb-label">SUMOBOT & HOCKEYBOT</div>
+          </div>
+          <div class="project-thumb-overlay"></div>
+          <div class="project-hover-overlay"><i class="fa-solid fa-expand"></i> View</div>
+        </div>
+        <div class="project-body">
+          <div class="project-category"></div>
+          <div class="project-title">Sumobot & Hockeybot</div>
+          <p class="project-desc">The Sumobot was designed to detect and push opponents out of the ring, while the Hockeybot focused on control and precision to score goals.</p>
+          <div class="project-tech">
+            <span class="tech-chip">CPEP223A - Computer Engineering Drafting and Design</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card project-card reveal"
+        data-category="hardware"
+        data-proj-title="Traffic Light using PCB & Arduino"
+        data-proj-img="images/proteus.png"
+        data-proj-subject="PCB & Arduino (Proteus for circuit implementation)"
+        data-proj-year="2nd Year — AY 2024–2025"
+        data-proj-language="7-segment display module, PCB, Proteus, Arduino"
+        data-proj-desc="Designed and simulated a Printed Circuit Board (PCB) using Proteus. The goal is to create an efficient and reliable PCB layout that can be used for a traffic light system. The PCB was arranged carefully to make sure the electronic components were connected properly and worked smoothly. Simulation was also performed to test the circuit before actual implementation, helping reduce errors and improve the overall design."
+        data-proj-source="https://tinyurl.com/pcbproj"
+        style="transition-delay:0.15s">
+        <div class="project-thumb" style="background:linear-gradient(135deg,#0a2e1a,#0d4a2a)">
+          <div class="project-thumb-inner">
+            <div class="project-thumb-icon" style="color:#68d391">💻</div>
+            <div class="project-thumb-label">PCB & ARDUINO </div>
+          </div>
+          <div class="project-thumb-overlay"></div>
+          <div class="project-hover-overlay"><i class="fa-solid fa-expand"></i> View</div>
+        </div>
+        <div class="project-body">
+          <div class="project-category"></div>
+          <div class="project-title">Traffic Light Using PCB & Arduino</div>
+          <p class="project-desc">Designed and simulated a Printed Circuit Board (PCB) using Proteus. The goal is to create an efficient and reliable PCB layout that can be used for real-world electronic applications. </p>
+          <div class="project-tech">
+            <span class="tech-chip">CPEP223A - Computer Engineering Drafting and Design</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card project-card reveal"
+        data-category="ai"
+        data-proj-title="Ngaon Ta!"
+        data-proj-img="images/ngaon.png"
+        data-proj-subject="AI & PWA"
+        data-proj-year="3rd Year — AY 2025-2026"
+        data-proj-language="Tensorflow, HTML, CSS, Javascript"
+        data-proj-desc="A Filipino Food Identifier using machine vision web application that identifies Filipino dishes using AI. The system uses a camera or uploaded image to recognize food and display its name together with additional information such as allergy warnings and translated names in Korean, Chinese, and Japanese."
+        data-proj-source="https://allysamarie07.github.io/FoodApp/"
+        style="transition-delay:0.2s">
+        <div class="project-thumb" style="background:linear-gradient(135deg,#2e1a0a,#4a2c0d)">
+          <div class="project-thumb-inner">
+            <div class="project-thumb-icon" style="color:#f6ad55">🌐</div>
+            <div class="project-thumb-label">ARTIFICIAL INTELLIGENCE & PWA</div>
+          </div>
+          <div class="project-thumb-overlay"></div>
+          <div class="project-hover-overlay"><i class="fa-solid fa-expand"></i> View</div>
+        </div>
+        <div class="project-body">
+          <div class="project-category"></div>
+          <div class="project-title">Ngaon Ta!</div>
+          <p class="project-desc">Uses a locally-trained AI model to identify Filipino dishes from photos. Results include ingredients, allergy warnings, and translations in 4 languages. Works fully offline after first visit.</p>
+          <div class="project-tech">
+            <span class="tech-chip">CPEP323A - CpE Cognate Track/Course 1</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card project-card reveal"
+        data-category="web hardware"
+        data-proj-title="Room Allocator"
+        data-proj-img="images/allocator.png"
+        data-proj-subject="Java App with RFID Scanner"
+        data-proj-year="2nd Year — AY 2024–2025"
+        data-proj-language="Java, MySQL, PHP, RFID"
+        data-proj-desc="a Java-based application designed to simplify the process of assigning rooms efficiently and accurately. Whether for classes or events, this tool helps organize and automate room assignments based on availability, capacity, or custom preferences—saving time and reducing conflicts. Built with usability in mind, it's perfect for institutions or anyone needing a smarter way to manage classrooms at University of Bohol."
+        data-proj-source="https://github.com/allysamarie07/Room-Allocator"
+        style="transition-delay:0.25s">
+            <div class="project-thumb" style="background:linear-gradient(135deg,#2e0a1a,#4a0d2c)">          <div class="project-thumb-inner">
+            <div class="project-thumb-icon" style="color:#63b3ed">🚪</div>
+            <div class="project-thumb-label">ROOM ALLOCATOR</div>
+          </div>
+          <div class="project-hover-overlay"><i class="fa-solid fa-expand"></i> View</div>
+        </div>
+        <div class="project-body">
+          <div class="project-category"></div>
+          <div class="project-title">Room Allocator</div>
+          <p class="project-desc">A Java-based room assignment application that organizes and automates room allocation for classes or events. The system helps assign rooms based on availability, capacity, and user preferences, helping save time and reduce scheduling conflicts.</p>
+          <div class="project-tech">
+            <span class="tech-chip">CPEP211A - Data Structures and Algorithms</span>
+            <span class="tech-chip">CPEP222 - Software Design</span>
+          </div>
+        </div>
+      </div>
+
+        <div class="card project-card reveal"
+        data-category="web"
+        data-proj-title="Root Master"
+        data-proj-img="images/numerical.png"
+        data-proj-subject="Java App"
+        data-proj-year="2nd Year — AY 2024–2025"
+        data-proj-language="Java"
+        data-proj-desc="An interactive application designed to help users solve complex mathematical problems using methods like Bisection, Newton-Raphson, Secant, and more. Built with Java and a user-friendly interface, this app makes learning and applying numerical techniques easier, faster, and more accessible for students and enthusiasts alike."
+        data-proj-source="https://www.youtube.com/watch?v=FhEXLaAkk_I"
+        data-proj-btn="documentation"
+        style="transition-delay:0.25s">
+        <div class="project-thumb" style="background:linear-gradient(135deg,#1a0a2e,#2d1b69)">
+          <div class="project-thumb-inner">
+            <div class="project-thumb-icon" style="color:#63b3ed">📱</div>
+            <div class="project-thumb-label">ROOT MASTER</div>
+          </div>
+          <div class="project-hover-overlay"><i class="fa-solid fa-expand"></i> View</div>
+        </div>
+        <div class="project-body">
+          <div class="project-category"></div>
+          <div class="project-title">Root Master</div>
+          <p class="project-desc">This Java app helps users solve mathematical problems using numerical methods like Bisection, Newton-Raphson, and Secant through a simple and user-friendly interface.</p>
+          <div class="project-tech">
+            <span class="tech-chip">CPEP221 - Numerical Methods</span>
+          </div>
+        </div>
+      </div>
+      
+        <div class="card project-card reveal"
+        data-category="web"
+        data-proj-title="Root Master Using MATLAB"
+        data-proj-img="images/matlabpic.png"
+        data-proj-subject="MATLAB"
+        data-proj-year="2nd Year — AY 2024–2025"
+        data-proj-language="MATLAB"
+        data-proj-desc="This is the second version of my calculator, developed as a MATLAB interactive application, designed to help users solve complex mathematical problems using methods such as Bisection, Newton-Raphson, Secant, and more."
+        data-proj-source="https://www.youtube.com/watch?v=FhEXLaAkk_I"
+        data-proj-btn="documentation"
+        style="transition-delay:0.25s">
+        <div class="project-thumb" style="background:linear-gradient(135deg,#1a1a2e,#16213e)">
+          <div class="project-thumb-inner">
+            <div class="project-thumb-icon" style="color:#63b3ed">🔢</div>
+            <div class="project-thumb-label">MATLAB </div>
+          </div>
+          <div class="project-hover-overlay"><i class="fa-solid fa-expand"></i> View</div>
+        </div>
+        <div class="project-body">
+          <div class="project-category"></div>
+          <div class="project-title">Root Master Using MATLAB</div>
+          <p class="project-desc">This is the second version of my calculator now using MATLAB. Designed to solve mathematical problems using methods like Bisection, Newton-Raphson, and Secant.</p>
+          <div class="project-tech">
+            <span class="tech-chip">CPEP221 - Numerical Methods</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card project-card reveal"
+        data-category="web"
+        data-proj-title="Brick Breaker - Game Dev"
+        data-proj-img="images/brick.png"
+        data-proj-subject="Machine Vision"
+        data-proj-year="3rd Year — AY 2025–2026"
+        data-proj-language="Python"
+        data-proj-desc="Brick Breaker is a face-controlled Python game with three difficulty levels: Easy, Medium, and Hard. Players can control the paddle by identifying the movement of the face to catch the ball. It also features a high-score dashboard where players can track and compare their best scores."
+        data-proj-source="https://github.com/allysamarie07/Brick-Breaker"
+        style="transition-delay:0.25s">
+        <div class="project-thumb" style="background:linear-gradient(135deg,#1e1a0a,#3a320d)">
+          <div class="project-thumb-inner">
+            <div class="project-thumb-icon" style="color:#63b3ed">🧱</div>
+            <div class="project-thumb-label">BRICK BREAKER</div>
+          </div>
+          <div class="project-hover-overlay"><i class="fa-solid fa-expand"></i> View</div>
+        </div>
+        <div class="project-body">
+          <div class="project-category"></div>
+          <div class="project-title">Brick Breaker - Brick Breaker</div>
+          <p class="project-desc">Brick Breaker is a face-controlled Python game with three difficulty levels: Easy, Medium, and Hard. The game uses computer vision technology to detect facial movements and translate them into controls.</p>
+          <div class="project-tech">
+          <span class="tech-chip">CPEP323A - CpE Cognate Track/Course 1</span>
+          </div>
+        </div>
+      </div>
+
+       <div class="card project-card reveal"
+        data-category="hardware"
+        data-proj-title="Ball Beam Balancer Using PD & Non-Linear Scaling Algorithm"
+        data-proj-img="images/beam.png"
+        data-proj-subject="Arduino"
+        data-proj-year="3rd Year — AY 2025–2026"
+        data-proj-language="Arduino Nano, Ultrasonic Sensor, MG996R motor"
+        data-proj-desc="Designed and developed a Ball Beam Balancer system using Arduino Nano maintain the position of a ball at the center of a beam. An ultrasonic sensor detects the ball’s location, while the Arduino Nano processes the data and controls the MG996R motor to adjust the beam’s angle. The system uses a Proportional-Derivative (PD) control algorithm combined with Non-Linear Scaling for stable and accurate balancing."
+        data-proj-source="https://tinyurl.com/ballbeambalancer"
+        data-proj-btn="documentation"
+        style="transition-delay:0.15s">
+        <div class="project-thumb" style="background:linear-gradient(135deg,#7c2d12,#431407)"> 
+          <div class="project-thumb-inner">
+            <div class="project-thumb-icon" style="color:#68d391">⚪</div>
+            <div class="project-thumb-label">BALL BEAM BALANCER </div>
+          </div>
+          <div class="project-thumb-overlay"></div>
+          <div class="project-hover-overlay"><i class="fa-solid fa-expand"></i> View</div>
+        </div>
+        <div class="project-body">
+          <div class="project-category"></div>
+          <div class="project-title">Ball Beam Balancer Using PD & Non-Linear Scaling Algorithm</div>
+          <p class="project-desc">Designed and developed a Ball Beam Balancer system using an Arduino Nano that keeps a ball balanced at the center of a beam using a sensor, a motor, and PD with non-linear scaling algorithms. </p>
+          <div class="project-tech">
+            <span class="tech-chip">CPEP324A - Microprocessors</span>
+          </div>
+        </div>
+      </div>
+
+        <div class="card project-card reveal"
+        data-category="hardware"
+        data-proj-title="Reverse Pendulum (Coin Balancer) Using PD Algorithm"
+        data-proj-img="images/coin.png"
+        data-proj-subject="Arduino Nano, Potentiometer, DC Motor"
+        data-proj-year="3rd Year — AY 2025–2026"
+        data-proj-language="Arduino Nano, Ultrasonic Sensor, MG996R motor"
+        data-proj-desc="Developed a Reverse Pendulum system using a PD algorithm to balance a coin on a pole. The project uses an Arduino Nano, a potentiometer, and a motor to control the movement of the system. The motor moves the base left and right to maintain the coin’s balance and stability."
+        data-proj-source="https://drive.google.com/drive/folders/1U5txYlpuVihweTwt-FYG8O3rXe9Ixfzd?usp=sharing"
+        data-proj-btn="documentation"
+        style="transition-delay:0.15s">
+        <div class="project-thumb" style="background:linear-gradient(135deg,#0a2e1a,#0d4a2a)">
+          <div class="project-thumb-inner">
+            <div class="project-thumb-icon" style="color:#68d391">🪙</div>
+            <div class="project-thumb-label">REVERSE PENDULUM</div>
+          </div>
+          <div class="project-thumb-overlay"></div>
+          <div class="project-hover-overlay"><i class="fa-solid fa-expand"></i> View</div>
+        </div>
+        <div class="project-body">
+          <div class="project-category"></div>
+          <div class="project-title">Reverse Pendulum (Coin Balancer) Using PD Algorithm</div>
+          <p class="project-desc">Created a Reverse Pendulum system using a PD control algorithm to keep a coin balanced on a moving pole. The bot continuously moves left and right to maintain the stability and balance of the coin.</p>
+          <div class="project-tech">
+            <span class="tech-chip">CPEP324A - Microprocessors</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card project-card reveal"
+        data-category="hardware"
+        data-proj-title="16-Segment Unique Name Letter Display"
+        data-proj-img="images/segment.png"
+        data-proj-subject="16-segment"
+        data-proj-year="2nd Year — AY 2024–2025"
+        data-proj-language="16-segment, IC, 3 bits Dip Switch"
+        data-proj-desc="Developed a 16-segment non-redundant organizer circuit that displays characters without repeating duplicate letters. The project uses digital logic and 16-segment display control. The first version uses a 3-bit DIP switch to control the displayed letters, while the second version automatically displays the characters."
+        data-proj-source="https://drive.google.com/drive/folders/12fumxO2_W0wBI8QukPQWYkReWwOGb8Hn?usp=sharing"
+        data-proj-btn="documentation"
+        style="transition-delay:0.15s">
+        <div class="project-thumb" style="background:linear-gradient(135deg,#831843,#500724)">  
+          <div class="project-thumb-inner">
+            <div class="project-thumb-icon" style="color:#f5f5f569">🅰️</div>
+            <div class="project-thumb-label">16-SEGMENT</div>
+          </div>
+          <div class="project-thumb-overlay"></div>
+          <div class="project-hover-overlay"><i class="fa-solid fa-expand"></i> View</div>
+        </div>
+        <div class="project-body">
+          <div class="project-category"></div>
+          <div class="project-title">16-Segment Unique Name Letter Display</div>
+          <p class="project-desc">Developed a 16-segment non-redundant display circuit that removes duplicate letters using digital logic and 16-segment display control, with versions using a 3-bit DIP switch and automatic character display.</p>
+          <div class="project-tech">
+            <span class="tech-chip">CPEP311A - Logic Circuits and Design</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card project-card reveal"
+        data-category="web hardware"
+        data-proj-title="Smart Barrier"
+        data-proj-img="images/flood.png"
+        data-proj-subject="Sensors and Signals"
+        data-proj-year="3rd Year — AY 2025–2026"
+        data-proj-language="ESP32,Current & Ultrasonic Sensor,MG996R,Solar"
+        data-proj-desc="Developed a Smart Barrier system using ESP32, ultrasonic sensor, current sensor, and MG996R motor to monitor rising water levels and automatically raise or lower a barrier to prevent overflow. With built-in solar power system that detects sunlight and provides energy for the device. A website was developed to display real-time water conditions and system status for monitoring and control."
+        data-proj-source="https://drive.google.com/drive/folders/17ggOEirT8K6FA85jnsIZxdyydTwz0ZT6?usp=sharing"
+        data-proj-btn="documentation"
+        style="transition-delay:0.15s">
+        <div class="project-thumb" style="background:linear-gradient(135deg,#0a1a2e,#102040)">   
+          <div class="project-thumb-inner">
+            <div class="project-thumb-icon" style="color:#f5f5f569">🌊</div>
+            <div class="project-thumb-label">SMART BARRIER</div>
+          </div>
+          <div class="project-thumb-overlay"></div>
+          <div class="project-hover-overlay"><i class="fa-solid fa-expand"></i> View</div>
+        </div>
+        <div class="project-body">
+          <div class="project-category"></div>
+          <div class="project-title">Smart Barrier</div>
+          <p class="project-desc">Developed a Smart Barrier system using an ESP32, sensors, and an MG996R motor to automatically control a barrier based on water levels, with solar-powered operation and a website for real-time monitoring and control.</p>
+          <div class="project-tech">
+            <span class="tech-chip">CPEP313A - Feedback & Control Systems</span>
+            <span class="tech-chip">CPEP314A - Fundamentals of Mixed Sensors & Signals</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="add-project-card reveal" style="transition-delay:0.3s">
+        <i class="fa-solid fa-plus-circle"></i>
+        <p>MORE PROJECTS COMING SOON</p>
+        <span class="btn btn-ghost" style="font-size:0.8rem">Stay Tuned</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Project Modal -->
+<div class="modal-overlay" id="projModal">
+  <div class="modal-box" style="max-width:620px">
+    <button class="modal-close" id="projModalClose"></i></button>
+    <div class="modal-thumb">
+      <img id="projModalImage" src="" alt="Project Image">
+    </div>
+    <div class="proj-modal-category" id="projModalCategory"></div>
+    <div class="modal-title" id="projModalTitle"></div>
+    <div class="proj-modal-meta">
+      <div class="proj-modal-meta-item">
+        <span class="proj-modal-meta-label"><i class="fa-solid fa-book"></i> Program</span>
+        <span class="proj-modal-meta-value" id="projModalSubject"></span>
+      </div>
+      <div class="proj-modal-meta-item">
+        <span class="proj-modal-meta-label"><i class="fa-solid fa-calendar"></i> School Year</span>
+        <span class="proj-modal-meta-value" id="projModalYear"></span>
+      </div>
+      <div class="proj-modal-meta-item">
+        <span class="proj-modal-meta-label"><i class="fa-solid fa-code"></i> Language / Hardware</span>
+        <span class="proj-modal-meta-value" id="projModalLanguage"></span>
+      </div>
+    </div>
+    <p class="modal-desc" id="projModalDesc"></p>
+    <a href="#" id="projModalSource" target="_blank" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:8px">
+      <i class="fa-brands fa-github"></i> View Source Code
+    </a>
+  </div>
+</div>
+
+<!-- ===== EXPERIENCE & LEADERSHIP ===== -->
+<section id="experience">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-label">// Experience & Leadership</span>
+      <h2 class="section-title">My <span class="gradient-text">Journey</span></h2>
+      <p class="section-subtitle">Leadership roles, organizations, workshops, and activities that shaped me.</p>
+    </div>
+    <div class="timeline">
+
+      <div class="timeline-item reveal" style="transition-delay:0.05s">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <div class="timeline-header">
+            <div>
+              <div class="timeline-title">Creative Team Head</div>
+              <div class="timeline-org"><i class="fa-solid fa-palette" style="margin-right:6px;color:var(--accent)"></i> Computer Engineering Students Association, University of Bohol</div>
+            </div>
+            <div class="timeline-date">2025 – 2026</div>
+          </div>
+          <p class="timeline-desc">Led design projects, managed creative concepts, and coordinating team members to produce engaging and visually effective outputs.</p>
+          <div class="timeline-tags">
+            <span class="timeline-tag">Leadership</span>
+            <span class="timeline-tag">Creativity</span>
+            <span class="timeline-tag">Communication</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal" style="transition-delay:0.1s">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <div class="timeline-header">
+            <div>
+              <div class="timeline-title">Public Relations Officer</div>
+              <div class="timeline-org"><i class="fa-solid fa-hand-point-right" style="margin-right:6px;color:var(--accent)"></i> National Student Supreme Government, University of Bohol</div>
+            </div>
+            <div class="timeline-date">2025 - 2026</div>
+          </div>
+          <p class="timeline-desc">Managed communication, promoted events and activities on social media, and maintaining positive relationships with the organization and the public.</p>
+          <div class="timeline-tags">
+            <span class="timeline-tag">Responsible</span>
+            <span class="timeline-tag">Strategic</span>
+            <span class="timeline-tag">Timely</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal" style="transition-delay:0.15s">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <div class="timeline-header">
+            <div>
+              <div class="timeline-title">Assistant Secretary</div>
+              <div class="timeline-org"><i class="fa-solid fa-feather-pointed" style="margin-right:6px;color:var(--accent)"></i> Computer Engineering Students Association, University, of Bohol</div>
+            </div>
+            <div class="timeline-date">2024 - 2025</div>
+          </div>
+          <p class="timeline-desc">Assisted in organizing documents, recording meeting information, and supporting administrative and communication tasks within the organization.</p>
+          <div class="timeline-tags">
+            <span class="timeline-tag">Organized</span>
+            <span class="timeline-tag">Detail-Oriented</span>
+            <span class="timeline-tag">Proactive</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal" style="transition-delay:0.2s">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <div class="timeline-header">
+            <div>
+              <div class="timeline-title">President</div>
+              <div class="timeline-org"><i class="fa-solid fa-circle-user" style="margin-right:6px;color:var(--accent)"></i> Youth for Environment Students Organization, Mayuga National High School</div>
+            </div>
+            <div class="timeline-date">2022 - 2023</div>
+          </div>
+          <p class="timeline-desc">Led in organizing workshops, coordinated meetings, initiatives to promote environmental awareness and sustainability among young people.</p>
+          <div class="timeline-tags">
+            <span class="timeline-tag">Go for Green</span>
+            <span class="timeline-tag">Community</span>
+            <span class="timeline-tag">Leadership</span>
+          </div>
+        </div>
+      </div>
+
+            <div class="timeline-item reveal" style="transition-delay:0.2s">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <div class="timeline-header">
+            <div>
+              <div class="timeline-title">Auditor</div>
+              <div class="timeline-org"><i class="fa-solid fa-circle-user" style="margin-right:6px;color:var(--accent)"></i> Student Supreme Government, Mayuga National High School</div>
+            </div>
+            <div class="timeline-date">2021 - 2022</div>
+          </div>
+          <p class="timeline-desc">Monitored financial records, ensuring transparency, and maintained accurate documentation of organizational funds.</p>
+          <div class="timeline-tags">
+            <span class="timeline-tag">Accountability</span>
+            <span class="timeline-tag">Transparency</span>
+            <span class="timeline-tag">Leadership</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal" style="transition-delay:0.25s">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <div class="timeline-header">
+            <div>
+              <div class="timeline-title">AI Ready ASEAN Seminar</div>
+              <div class="timeline-org"><i class="fa-solid fa-floppy-disk" style="margin-right:6px;color:var(--accent)"></i> ASEAN Youth Organization </div>
+            </div>
+            <div class="timeline-date">February 2026</div>
+          </div>
+          <p class="timeline-desc">Attended a full-day seminar covering cybersecurity fundamentals, ethical hacking concepts, vulnerability assessment, and career pathways about AI.</p>
+          <div class="timeline-tags">
+            <span class="timeline-tag">Cybersecurity</span>
+            <span class="timeline-tag">Seminar</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== CERTIFICATES ===== -->
+<section id="certificates">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-label">// Certificates & Achievements</span>
+      <h2 class="section-title">Recognition & <span class="gradient-text">Credentials</span></h2>
+      <p class="section-subtitle">Certifications, awards, and achievements that validate my expertise and dedication.</p>
+    </div>
+    <div class="cert-grid">
+
+      <div class="card cert-card reveal"
+        data-cert-title="GETTING STARTED WITH PCB DESIGN"
+        data-cert-issuer="Tagbilaran City Science High School"
+        data-cert-date="February 2026"
+        data-cert-img="images/pcb.png"
+        data-cert-desc="Successfully served as one of the speakers and facilitators in a seminar-workshop focused on basic PCB concepts, PCB parts and functions, design rules, safety practices, and introductory PCB designing using Proteus."
+        style="transition-delay:0.05s">
+        <div class="cert-thumb">
+          <img src="images/pcb.png">
+          <div class="cert-thumb-overlay"></div>
+          <div class="cert-hover-overlay"><i class="fa-solid fa-expand"></i> View</div>
+        </div>
+        <div class="cert-body">
+          <div class="cert-title">Getting Started With PCB Design <br> (Seminar/Workshop) Speaker</div>
+          <div class="cert-issuer"><i class="fa-solid fa-certificate"></i> Tagbilaran City Science HS</div>
+          <div class="cert-date">February 2026</div>
+        </div>
+      </div>
+
+      <div class="card cert-card reveal"
+        data-cert-title="HOCKEYBOT Champion"
+        data-cert-issuer="University of Bohol"
+        data-cert-date="April 2025"
+        data-cert-img="images/hockeycert.png"
+        data-cert-desc="Placed Champion during the Technocraft 2025 Hockeybot Competition by successfully designing, building, and operating a hockey robot that demonstrated teamwork."
+        style="transition-delay:0.1s">
+        <div class="cert-thumb">
+          <img src="images/hockeybot.png">
+          <div class="cert-thumb-overlay"></div>
+          <div class="cert-hover-overlay"><i class="fa-solid fa-expand"></i> View</div>
+        </div>
+        <div class="cert-body">
+          <div class="cert-title">ROBOSEUM <br> Hockeybot Champion</div>
+          <div class="cert-issuer"><i class="fa-solid fa-award"></i> University of Bohol</div>
+          <div class="cert-date">April 2025</div>
+        </div>
+      </div>
+
+      <div class="card cert-card reveal"
+        data-cert-title="RFID Attendance System EVLAUNCH"
+        data-cert-issuer="University of Bohol"
+        data-cert-date="AY 2024–Present"
+        data-cert-img="images/evlaunchcert.png"
+        data-cert-desc="Awarded the Dean's Lister recognition for achieving a Grade Point Average of 1.75 or higher during the academic year 2023–2024, demonstrating academic excellence and dedication."
+        style="transition-delay:0.15s">
+        <div class="cert-thumb">
+          <img src="images/evlaunch.png">
+          <div class="cert-thumb-overlay"></div>
+          <div class="cert-hover-overlay"><i class="fa-solid fa-expand"></i> View</div>
+        </div>
+        <div class="cert-body">
+          <div class="cert-title">RFID Attendance System EVLAUNCH</div>
+          <div class="cert-issuer"><i class="fa-solid fa-award"></i> University of Bohol</div>
+          <div class="cert-date">AY 2024–Present</div>
+        </div>
+      </div>
+
+      <div class="card cert-card reveal"
+        data-cert-title="MATLAB Onramp Certificate"
+        data-cert-issuer="MathWorks"
+        data-cert-date="February 2025"
+        data-cert-img="images/matlabcert.png"
+        data-cert-desc="Completed the MATLAB Onramp course by MathWorks, gaining foundational skills in MATLAB programming including scripts, functions, and data visualization."
+        style="transition-delay:0.2s">
+        <div class="cert-thumb">
+          <img src="images/matlab.png">
+          <div class="cert-thumb-overlay"></div>
+          <div class="cert-hover-overlay"><i class="fa-solid fa-expand"></i> View</div>
+        </div>
+        <div class="cert-body">
+          <div class="cert-title">MATLAB Onramp Completer</div>
+          <div class="cert-issuer"><i class="fa-solid fa-certificate"></i> MathWorks</div>
+          <div class="cert-date">February 2025</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Certificate Modal -->
+<div class="modal-overlay" id="certModal">
+  <div class="modal-box">
+    <button class="modal-close" id="modalClose"><i class="fa-solid fa-xmark"></i></button>
+    <div class="modal-title" id="modalTitle">Certificate Title</div>
+    <div class="modal-meta" id="modalMeta">Issued by • Date</div>
+    <div class="modal-thumb">
+      <img id="modalImage" src="" alt="Certificate Image">
+    </div>
+    <p class="modal-desc" id="modalDesc">Description</p>
+  </div>
+</div>
+
+<!-- ===== RESUME SECTION ===== -->
+<section id="resume">
+  <div class="container">
+    <div class="resume-box reveal">
+      <div class="card resume-preview">
+        <div class="resume-preview-bg"></div>
+        <div class="resume-icon"><i class="fa-solid fa-file-lines"></i></div>
+        <div class="resume-title">Professional Resume</div>
+        <div class="resume-sub">Ready for Download</div>
+      </div>
+      <div class="section-header" style="text-align:center">
+        <span class="section-label" style="justify-content:center;display:flex">// Resume</span>
+        <h2 class="section-title">My <span class="gradient-text">Resume</span></h2>
+      </div>
+      <p class="resume-summary">
+        A hardworking Computer Engineering student with strong academic performance, hands-on project experience, and a dream for technology. 
+        Skilled in software development, data management, and system design, with the ability to learn quickly and work well in a team. Seeking an OJT opportunity 
+        to apply my knowledge, contribute to meaningful projects, and gain professional experience in the field.
+      </p>
+      <div class="resume-highlights">
+        <div class="card rh-item">
+          <div class="rh-num">1.8</div>
+          <div class="rh-label">GPA (Out of 3.0)</div>
+        </div>
+        <div class="card rh-item">
+          <div class="rh-num">20+</div>
+          <div class="rh-label">Projects Built</div>
+        </div>
+        <div class="card rh-item">
+          <div class="rh-num">30</div>
+          <div class="rh-label">Certificates</div>
+        </div>
+      </div>
+      <a href="#" class="btn btn-primary" style="margin:0 auto;display:inline-flex">
+        <i class="fa-solid fa-download"></i> Download Full Resume (PDF)
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section id="contact">
+  <div class="container">
+    <div class="section-header reveal" style="text-align:center;align-items:center;display:flex;flex-direction:column">
+      <span class="section-label">// Contact</span>
+      <h2 class="section-title">Let's <span class="gradient-text">Connect</span></h2>
+      <p class="section-subtitle" style="text-align:center">Open to OJT opportunities, collaborations, and conversations. Let's build something great together.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info reveal-left">
+        <div>
+          <div class="contact-info-title">Get In Touch</div>
+          <p class="contact-info-text">I'm currently available for on-the-job training opportunities. Whether you have a role in mind or just want to talk tech, I'd love to hear from you!</p>
+        </div>
+        <div class="contact-methods">
+          <a href="mailto:yourname@email.com" class="contact-method">
+            <div class="contact-method-icon"><i class="fa-solid fa-envelope"></i></div>
+            <div>
+              <div class="contact-method-label">EMAIL</div>
+              <div class="contact-method-value">allysamariedatahan@email.com</div>
+            </div>
+          </a>
+          <a href="#" class="contact-method">
+            <div class="contact-method-icon" style="background:linear-gradient(135deg,#0077b5,#005fa3)"><i class="fa-solid fa-mobile"></i></div>
+            <div>
+              <div class="contact-method-label">Contact Number</div>
+              <div class="contact-method-value">09381943708</div>
+            </div>
+          </a>
+          <a href="#" class="contact-method">
+            <div class="contact-method-icon" style="background:linear-gradient(135deg,#24292e,#3d444d)"><i class="fa-brands fa-github"></i></div>
+            <div>
+              <div class="contact-method-label">GITHUB</div>
+              <div class="contact-method-value">https://github.com/allysamarie07</div>
+            </div>
+          </a>
+          <a href="#" class="contact-method">
+            <div class="contact-method-icon" style="background:linear-gradient(135deg,#1877f2,#0c5ec7)"><i class="fa-brands fa-facebook-f"></i></div>
+            <div>
+              <div class="contact-method-label">FACEBOOK</div>
+              <div class="contact-method-value">https://www.facebook.com/allysamarie.apaezdatahan/</div>
+            </div>
+          </a>
+        </div>
+        <div class="social-links">
+          <a href="https://www.facebook.com/allysamarie.apaezdatahan/" class="social-link" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="www.linkedin.com/in/allysa-marie-datahan-09733140a" class="social-link" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://github.com/allysamarie07" class="social-link" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="mailto:allysamariedatahan@email.com" class="social-link" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+      </div>
+      <div class="reveal-right">
+        <div class="card" style="padding:32px">
+          <div class="contact-form" id="contactForm">
+            <div class="form-group">
+              <label class="form-label" for="name">YOUR NAME</label>
+              <input type="text" id="name" class="form-input" placeholder="e.g. Allysa Marie Datahan" required />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="email">EMAIL ADDRESS</label>
+              <input type="email" id="email" class="form-input" placeholder="e.g. allysamariedatahan@gmail.com" required />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="subject">SUBJECT</label>
+              <input type="text" id="subject" class="form-input" placeholder="e.g. OJT Opportunity" />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="message">MESSAGE</label>
+              <textarea id="message" class="form-textarea" placeholder="Tell me about the opportunity or just say hi!" required></textarea>
+            </div>
+            <button class="form-submit" id="submitBtn" type="button">
+              <i class="fa-solid fa-paper-plane"></i> Send Message
+            </button>
+          </div>
+          <div class="form-success" id="formSuccess">
+            <i class="fa-solid fa-circle-check"></i>
+            <p>Message sent successfully!</p>
+            <span style="color:var(--text-muted);font-size:0.85rem">I'll get back to you within 24 hours.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <a href="#hero" class="footer-logo">Allysa Marie Datahan</a>
+      <nav class="footer-nav">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#certificates">Certificates</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="footer-copy">
+        &copy; <span id="year"></span> <span>Ctrl + Allysa</span>. All Rights Reserved.
+        Built with <span style="color:#fc8181">Joshua D. Talaid</span> for OJT Applications.
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Scroll to top -->
+<button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+  <i class="fa-solid fa-arrow-up"></i>
+</button>
+
+<script>
+/* ============================================================
+   LOADER
+   ============================================================ */
+window.addEventListener('load', () => {
+  setTimeout(() => {
+    document.getElementById('loader').classList.add('hidden');
+    document.body.style.overflow = '';
+    initAnimations();
+  }, 2400);
+});
+document.body.style.overflow = 'hidden';
+
+/* ============================================================
+   PARTICLES
+   ============================================================ */
+(function() {
+  const canvas = document.getElementById('particles-canvas');
+  const ctx = canvas.getContext('2d');
+  let particles = [];
+  const isDark = () => document.documentElement.getAttribute('data-theme') !== 'light';
+
+  function resize() {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+  }
+  resize();
+  window.addEventListener('resize', resize);
+
+  class Particle {
+    constructor() { this.reset(); }
+    reset() {
+      this.x = Math.random() * canvas.width;
+      this.y = Math.random() * canvas.height;
+      this.size = Math.random() * 1.5 + 0.3;
+      this.vx = (Math.random() - 0.5) * 0.3;
+      this.vy = (Math.random() - 0.5) * 0.3;
+      this.alpha = Math.random() * 0.4 + 0.1;
+      this.color = Math.random() > 0.5 ? '99,179,237' : '159,122,234';
+    }
+    update() {
+      this.x += this.vx; this.y += this.vy;
+      if (this.x < 0 || this.x > canvas.width || this.y < 0 || this.y > canvas.height) this.reset();
+    }
+    draw() {
+      ctx.save();
+      ctx.globalAlpha = isDark() ? this.alpha : this.alpha * 0.5;
+      ctx.fillStyle = `rgb(${this.color})`;
+      ctx.beginPath();
+      ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+      ctx.fill();
+      ctx.restore();
+    }
+  }
+
+  for (let i = 0; i < 80; i++) particles.push(new Particle());
+
+  function loop() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    // Draw connections
+    for (let i = 0; i < particles.length; i++) {
+      for (let j = i + 1; j < particles.length; j++) {
+        const dx = particles[i].x - particles[j].x;
+        const dy = particles[i].y - particles[j].y;
+        const dist = Math.sqrt(dx*dx + dy*dy);
+        if (dist < 100) {
+          ctx.save();
+          ctx.globalAlpha = (1 - dist/100) * (isDark() ? 0.08 : 0.04);
+          ctx.strokeStyle = isDark() ? '#63b3ed' : '#3f81cf';
+          ctx.lineWidth = 0.5;
+          ctx.beginPath();
+          ctx.moveTo(particles[i].x, particles[i].y);
+          ctx.lineTo(particles[j].x, particles[j].y);
+          ctx.stroke();
+          ctx.restore();
+        }
+      }
+    }
+    particles.forEach(p => { p.update(); p.draw(); });
+    requestAnimationFrame(loop);
+  }
+  loop();
+})();
+
+/* ============================================================
+   TYPED TEXT
+   ============================================================ */
+(function() {
+  const phrases = [
+    'BS in Computer Engineering',
+    'Web Developer',
+    'AI Enthusiast',
+    'Problem Solver',
+    'OJT Applicant'
+  ];
+  const el = document.getElementById('typed-text');
+  let pIdx = 0, cIdx = 0, deleting = false;
+
+  function type() {
+    const phrase = phrases[pIdx];
+    el.textContent = deleting ? phrase.substring(0, cIdx--) : phrase.substring(0, cIdx++);
+    let delay = deleting ? 60 : 100;
+    if (!deleting && cIdx > phrase.length) { delay = 2000; deleting = true; }
+    else if (deleting && cIdx < 0) { deleting = false; pIdx = (pIdx + 1) % phrases.length; delay = 400; }
+    setTimeout(type, delay);
+  }
+  setTimeout(type, 2500);
+})();
+
+/* ============================================================
+   THEME TOGGLE
+   ============================================================ */
+const themeToggle = document.getElementById('themeToggle');
+const themeIcon = document.getElementById('themeIcon');
+let theme = 'dark';
+themeToggle.addEventListener('click', () => {
+  theme = theme === 'dark' ? 'light' : 'dark';
+  document.documentElement.setAttribute('data-theme', theme);
+  themeIcon.className = theme === 'dark' ? 'fa-solid fa-moon' : 'fa-solid fa-sun';
+});
+
+/* ============================================================
+   NAVBAR SCROLL
+   ============================================================ */
+const navbar = document.getElementById('navbar');
+window.addEventListener('scroll', () => {
+  navbar.classList.toggle('scrolled', window.scrollY > 20);
+  document.getElementById('scrollTop').classList.toggle('visible', window.scrollY > 400);
+});
+
+/* ============================================================
+   HAMBURGER MENU
+   ============================================================ */
+const hamburger = document.getElementById('hamburger');
+const mobileMenu = document.getElementById('mobileMenu');
+hamburger.addEventListener('click', () => {
+  hamburger.classList.toggle('open');
+  mobileMenu.classList.toggle('open');
+});
+document.querySelectorAll('.mobile-link').forEach(a => {
+  a.addEventListener('click', () => {
+    hamburger.classList.remove('open');
+    mobileMenu.classList.remove('open');
+  });
+});
+
+/* ============================================================
+   SCROLL REVEAL
+   ============================================================ */
+function initAnimations() {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add('visible'); }
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+  document.querySelectorAll('.reveal, .reveal-left, .reveal-right').forEach(el => {
+    observer.observe(el);
+  });
+
+  // Skill bars
+  const skillObs = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.querySelectorAll('.skill-bar').forEach(bar => {
+          bar.style.width = bar.dataset.width + '%';
+        });
+        skillObs.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.3 });
+
+  const skillSection = document.getElementById('skills');
+  if (skillSection) skillObs.observe(skillSection);
+
+  // Counters
+  const counterObs = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.querySelectorAll('[data-target]').forEach(el => {
+          animateCounter(el);
+        });
+        counterObs.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.5 });
+
+  document.querySelectorAll('.hero-stats, .counters-grid').forEach(el => {
+    counterObs.observe(el);
+  });
+}
+
+function animateCounter(el) {
+  const target = parseInt(el.dataset.target);
+  const duration = 1500;
+  const start = performance.now();
+  function step(now) {
+    const progress = Math.min((now - start) / duration, 1);
+    const ease = 1 - Math.pow(1 - progress, 3);
+    el.textContent = Math.floor(ease * target);
+    if (progress < 1) requestAnimationFrame(step);
+    else el.textContent = target + (target >= 10 ? '+' : '');
+  }
+  requestAnimationFrame(step);
+}
+
+/* ============================================================
+   PROJECT FILTERING
+   ============================================================ */
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const filter = btn.dataset.filter;
+        document.querySelectorAll('.project-card').forEach(card => {
+          const categories = card.dataset.category.split(' ');
+          if (filter === 'all' || categories.includes(filter)) {
+            card.style.display = '';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+
+/* ============================================================
+   PROJECT MODAL
+   ============================================================ */
+const projModal = document.getElementById('projModal');
+const projModalClose = document.getElementById('projModalClose');
+
+document.querySelectorAll('.project-card').forEach(card => {
+  card.addEventListener('click', () => {
+    document.getElementById('projModalTitle').textContent    = card.dataset.projTitle;
+    document.getElementById('projModalCategory').textContent = card.dataset.projCategory || card.querySelector('.project-category').textContent;
+    document.getElementById('projModalImage').src            = card.dataset.projImg || '';
+    document.getElementById('projModalSubject').textContent  = card.dataset.projSubject;
+    document.getElementById('projModalYear').textContent     = card.dataset.projYear;
+    document.getElementById('projModalLanguage').textContent = card.dataset.projLanguage;
+    document.getElementById('projModalDesc').textContent     = card.dataset.projDesc;
+    document.getElementById('projModalSource').href = card.dataset.projSource || '#';
+
+    const isDoc = card.dataset.projBtn === 'documentation';
+    document.getElementById('projModalSource').innerHTML = isDoc
+      ? '<i class="fa-solid fa-file-lines"></i> View Documentation'
+      : '<i class="fa-brands fa-github"></i> View Source Code';
+        projModal.classList.add('open');
+        document.body.style.overflow = 'hidden';
+      });
+    });
+
+function closeProjModal() {
+  projModal.classList.remove('open');
+  document.body.style.overflow = '';
+}
+projModalClose.addEventListener('click', closeProjModal);
+projModal.addEventListener('click', e => { if (e.target === projModal) closeProjModal(); });
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeProjModal(); });
+
+/* ============================================================
+   CERTIFICATE MODAL
+   ============================================================ */
+const modal = document.getElementById('certModal');
+const modalClose = document.getElementById('modalClose');
+
+document.querySelectorAll('.cert-card').forEach(card => {
+  card.addEventListener('click', () => {
+    document.getElementById('modalTitle').textContent = card.dataset.certTitle;
+    document.getElementById('modalMeta').textContent = card.dataset.certIssuer + ' • ' + card.dataset.certDate;
+    document.getElementById('modalDesc').textContent = card.dataset.certDesc;
+    document.getElementById('modalImage').src = card.dataset.certImg || '';
+    modal.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  });
+});
+
+function closeModal() {
+  modal.classList.remove('open');
+  document.body.style.overflow = '';
+}
+modalClose.addEventListener('click', closeModal);
+modal.addEventListener('click', e => { if (e.target === modal) closeModal(); });
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+
+/* ============================================================
+   CONTACT FORM
+   ============================================================ */
+document.getElementById('submitBtn').addEventListener('click', () => {
+  const name = document.getElementById('name').value;
+  const email = document.getElementById('email').value;
+  const message = document.getElementById('message').value;
+  if (!name || !email || !message) {
+    alert('Please fill in all required fields.');
+    return;
+  }
+  document.getElementById('contactForm').style.display = 'none';
+  document.getElementById('formSuccess').style.display = 'block';
+});
+
+/* ============================================================
+   SCROLL TO TOP
+   ============================================================ */
+document.getElementById('scrollTop').addEventListener('click', () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
+/* ============================================================
+   FOOTER YEAR
+   ============================================================ */
+document.getElementById('year').textContent = new Date().getFullYear();
+
+/* ============================================================
+   RESUME DOWNLOAD NOTICE
+   ============================================================ */
+document.querySelectorAll('#downloadResume, [href="#"]').forEach(el => {
+  if (el.textContent.includes('Download') || el.querySelector && el.querySelector('.fa-download')) {
+    el.addEventListener('click', e => {
+      if (el.tagName === 'A' && el.getAttribute('href') === '#') {
+        // placeholder action
+      }
+    });
+  }
+});
+</script>
+</body>
+</html>
